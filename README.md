@@ -4,13 +4,13 @@ Django-based extraction service for structured data extraction from documents us
 
 ## Features
 
-- **Multi-Provider LLM Support**: Uses litellm for OpenAI, Anthropic Claude, and AWS Bedrock
-- **Structured Outputs**: Uses instructor library with Pydantic for type-safe structured extraction
-- **Multi-Pass Validation**: Automatic validation and repair of extraction results
-- **Custom Schemas**: Accept any extraction schema definition at runtime
-- **PostgreSQL Storage**: Persistent storage of extraction jobs and results
-- **Django REST Framework**: Full REST API with browsable interface
-- **Django Admin**: Rich admin interface for monitoring and management
+- Multi-Provider LLM Support: Uses litellm for OpenAI, Anthropic Claude, and AWS Bedrock
+- Structured Outputs: Uses instructor library with Pydantic for type-safe structured extraction
+- Multi-Pass Validation: Automatic validation and repair of extraction results
+- Custom Schemas: Accept any extraction schema definition at runtime
+- PostgreSQL Storage: Persistent storage of extraction jobs and results
+- Django REST Framework: Full REST API with browsable interface
+- Django Admin: Rich admin interface for monitoring and management
 
 ## Architecture
 
@@ -340,47 +340,34 @@ python manage.py runserver 0.0.0.0:8001
 
 ## Use Cases
 
-This extraction service can be applied across various industries and document types:
+The extraction service supports the following document types:
 
 **Financial Services**
-- Extract data from invoices, receipts, and purchase orders
-- Process loan applications and financial statements
-- Analyze investment reports and prospectuses
+- Invoices, receipts, and purchase orders
+- Loan applications and financial statements
+- Investment reports and prospectuses
 
 **Legal Industry**
-- Extract key terms from contracts and agreements
-- Process legal briefs and case documents
-- Analyze regulatory filings and compliance documents
+- Contracts and agreements
+- Legal briefs and case documents
+- Regulatory filings and compliance documents
 
 **Healthcare**
-- Process medical records and patient forms
-- Extract data from clinical trial documents
-- Analyze research papers and medical literature
+- Medical records and patient forms
+- Clinical trial documents
+- Research papers and medical literature
 
 **Business Operations**
-- Process employee forms and HR documents
-- Extract data from business reports and presentations
-- Analyze vendor contracts and purchase agreements
+- Employee forms and HR documents
+- Business reports and presentations
+- Vendor contracts and purchase agreements
 
 **Research & Academia**
-- Extract structured data from research papers
-- Process survey responses and questionnaires
-- Analyze academic publications and citations
+- Research papers
+- Survey responses and questionnaires
+- Academic publications and citations
 
 **Government & Public Sector**
-- Process permit applications and regulatory forms
-- Extract data from public records and filings
-- Analyze policy documents and legislation
-
-## Who Should Use This
-
-This service is designed for:
-
-- **Software Engineers**: Building applications that need to extract structured data from documents
-- **Data Scientists**: Creating pipelines for document processing and analysis
-- **Product Teams**: Integrating intelligent document processing into their products
-- **Enterprises**: Organizations that need to process high volumes of documents efficiently
-- **Startups**: Teams looking for a flexible, API-first document extraction solution
-- **Researchers**: Those working on natural language processing and information extraction projects
-
-Whether you're processing hundreds of documents or millions, this service provides the flexibility and scalability to handle structured data extraction from any type of unstructured document.
+- Permit applications and regulatory forms
+- Public records and filings
+- Policy documents and legislation
